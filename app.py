@@ -4,11 +4,8 @@ import os
 import requests
 import streamlit as st
 from dotenv import load_dotenv
-
-
 load_dotenv()
-MELISSA_KEY = os.getenv("MELISSA_KEY")
-
+MELISSA_KEY = st.secrets.get("MELISSA_KEY", os.getenv("MELISSA_KEY"))
 # ----------------------------
 # Melissa: Global Address Verification (with geocode)
 # ----------------------------
