@@ -1,25 +1,10 @@
-st.markdown("""
-<style>
-.main {
-    background-color: #0f172a;
-}
-h1, h2, h3 {
-    color: #38bdf8;
-}
-div.stButton > button {
-    background-color: #2563eb;
-    color: white;
-    border-radius: 10px;
-    padding: 10px 20px;
-}
-</style>
-""", unsafe_allow_html=True)
 
 
 import os
 import requests
 import streamlit as st
 from dotenv import load_dotenv
+
 
 load_dotenv()
 MELISSA_KEY = os.getenv("MELISSA_KEY")
